@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		865F88461EC02D000073DED2 /* NSDate+DBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 865F88351EC02D000073DED2 /* NSDate+DBExtension.m */; };
+		865F88471EC02D000073DED2 /* NSString+DBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 865F88371EC02D000073DED2 /* NSString+DBExtension.m */; };
+		865F88481EC02D000073DED2 /* UIBarButtonItem+DBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 865F88391EC02D000073DED2 /* UIBarButtonItem+DBExtension.m */; };
+		865F88491EC02D000073DED2 /* UIColor+DBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 865F883B1EC02D000073DED2 /* UIColor+DBExtension.m */; };
+		865F884A1EC02D000073DED2 /* UIImage+DBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 865F883D1EC02D000073DED2 /* UIImage+DBExtension.m */; };
+		865F884B1EC02D000073DED2 /* UIView+DBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 865F883F1EC02D000073DED2 /* UIView+DBExtension.m */; };
+		865F884C1EC02D000073DED2 /* DBTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 865F88431EC02D000073DED2 /* DBTextField.m */; };
+		865F884D1EC02D000073DED2 /* DBVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 865F88451EC02D000073DED2 /* DBVerticalButton.m */; };
 		86BC172D1EBC5140005936FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BC172C1EBC5140005936FC /* main.m */; };
 		86BC17301EBC5140005936FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BC172F1EBC5140005936FC /* AppDelegate.m */; };
 		86BC17331EBC5140005936FC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BC17321EBC5140005936FC /* ViewController.m */; };
@@ -15,14 +23,6 @@
 		86BC173B1EBC5140005936FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86BC17391EBC5140005936FC /* LaunchScreen.storyboard */; };
 		86BC17461EBC5140005936FC /* DBKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BC17451EBC5140005936FC /* DBKitDemoTests.m */; };
 		86BC17511EBC5140005936FC /* DBKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BC17501EBC5140005936FC /* DBKitDemoUITests.m */; };
-		86BC17721EBC6437005936FC /* NSDate+DBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BC17611EBC6437005936FC /* NSDate+DBExtension.m */; };
-		86BC17731EBC6437005936FC /* NSString+DBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BC17631EBC6437005936FC /* NSString+DBExtension.m */; };
-		86BC17741EBC6437005936FC /* UIBarButtonItem+DBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BC17651EBC6437005936FC /* UIBarButtonItem+DBExtension.m */; };
-		86BC17751EBC6437005936FC /* UIColor+DBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BC17671EBC6437005936FC /* UIColor+DBExtension.m */; };
-		86BC17761EBC6437005936FC /* UIImage+DBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BC17691EBC6437005936FC /* UIImage+DBExtension.m */; };
-		86BC17771EBC6437005936FC /* UIView+DBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BC176B1EBC6437005936FC /* UIView+DBExtension.m */; };
-		86BC17781EBC6437005936FC /* DBTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BC176F1EBC6437005936FC /* DBTextField.m */; };
-		86BC17791EBC6437005936FC /* DBVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BC17711EBC6437005936FC /* DBVerticalButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +43,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		865F88341EC02D000073DED2 /* NSDate+DBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DBExtension.h"; sourceTree = "<group>"; };
+		865F88351EC02D000073DED2 /* NSDate+DBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DBExtension.m"; sourceTree = "<group>"; };
+		865F88361EC02D000073DED2 /* NSString+DBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DBExtension.h"; sourceTree = "<group>"; };
+		865F88371EC02D000073DED2 /* NSString+DBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DBExtension.m"; sourceTree = "<group>"; };
+		865F88381EC02D000073DED2 /* UIBarButtonItem+DBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+DBExtension.h"; sourceTree = "<group>"; };
+		865F88391EC02D000073DED2 /* UIBarButtonItem+DBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+DBExtension.m"; sourceTree = "<group>"; };
+		865F883A1EC02D000073DED2 /* UIColor+DBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DBExtension.h"; sourceTree = "<group>"; };
+		865F883B1EC02D000073DED2 /* UIColor+DBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DBExtension.m"; sourceTree = "<group>"; };
+		865F883C1EC02D000073DED2 /* UIImage+DBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DBExtension.h"; sourceTree = "<group>"; };
+		865F883D1EC02D000073DED2 /* UIImage+DBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DBExtension.m"; sourceTree = "<group>"; };
+		865F883E1EC02D000073DED2 /* UIView+DBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DBExtension.h"; sourceTree = "<group>"; };
+		865F883F1EC02D000073DED2 /* UIView+DBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DBExtension.m"; sourceTree = "<group>"; };
+		865F88401EC02D000073DED2 /* DBKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBKit.h; sourceTree = "<group>"; };
+		865F88421EC02D000073DED2 /* DBTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBTextField.h; sourceTree = "<group>"; };
+		865F88431EC02D000073DED2 /* DBTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBTextField.m; sourceTree = "<group>"; };
+		865F88441EC02D000073DED2 /* DBVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBVerticalButton.h; sourceTree = "<group>"; };
+		865F88451EC02D000073DED2 /* DBVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBVerticalButton.m; sourceTree = "<group>"; };
 		86BC17281EBC5140005936FC /* DBKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86BC172C1EBC5140005936FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		86BC172E1EBC5140005936FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,23 +76,6 @@
 		86BC174C1EBC5140005936FC /* DBKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DBKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86BC17501EBC5140005936FC /* DBKitDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBKitDemoUITests.m; sourceTree = "<group>"; };
 		86BC17521EBC5140005936FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		86BC17601EBC6437005936FC /* NSDate+DBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DBExtension.h"; sourceTree = "<group>"; };
-		86BC17611EBC6437005936FC /* NSDate+DBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DBExtension.m"; sourceTree = "<group>"; };
-		86BC17621EBC6437005936FC /* NSString+DBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DBExtension.h"; sourceTree = "<group>"; };
-		86BC17631EBC6437005936FC /* NSString+DBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DBExtension.m"; sourceTree = "<group>"; };
-		86BC17641EBC6437005936FC /* UIBarButtonItem+DBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+DBExtension.h"; sourceTree = "<group>"; };
-		86BC17651EBC6437005936FC /* UIBarButtonItem+DBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+DBExtension.m"; sourceTree = "<group>"; };
-		86BC17661EBC6437005936FC /* UIColor+DBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DBExtension.h"; sourceTree = "<group>"; };
-		86BC17671EBC6437005936FC /* UIColor+DBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DBExtension.m"; sourceTree = "<group>"; };
-		86BC17681EBC6437005936FC /* UIImage+DBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DBExtension.h"; sourceTree = "<group>"; };
-		86BC17691EBC6437005936FC /* UIImage+DBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DBExtension.m"; sourceTree = "<group>"; };
-		86BC176A1EBC6437005936FC /* UIView+DBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DBExtension.h"; sourceTree = "<group>"; };
-		86BC176B1EBC6437005936FC /* UIView+DBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DBExtension.m"; sourceTree = "<group>"; };
-		86BC176C1EBC6437005936FC /* DBKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBKit.h; sourceTree = "<group>"; };
-		86BC176E1EBC6437005936FC /* DBTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBTextField.h; sourceTree = "<group>"; };
-		86BC176F1EBC6437005936FC /* DBTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBTextField.m; sourceTree = "<group>"; };
-		86BC17701EBC6437005936FC /* DBVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBVerticalButton.h; sourceTree = "<group>"; };
-		86BC17711EBC6437005936FC /* DBVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBVerticalButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +103,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		865F88321EC02D000073DED2 /* DBKits */ = {
+			isa = PBXGroup;
+			children = (
+				865F88401EC02D000073DED2 /* DBKit.h */,
+				865F88331EC02D000073DED2 /* DBCategories */,
+				865F88411EC02D000073DED2 /* DBUIKits */,
+			);
+			name = DBKits;
+			path = ../../DBKits;
+			sourceTree = "<group>";
+		};
+		865F88331EC02D000073DED2 /* DBCategories */ = {
+			isa = PBXGroup;
+			children = (
+				865F88341EC02D000073DED2 /* NSDate+DBExtension.h */,
+				865F88351EC02D000073DED2 /* NSDate+DBExtension.m */,
+				865F88361EC02D000073DED2 /* NSString+DBExtension.h */,
+				865F88371EC02D000073DED2 /* NSString+DBExtension.m */,
+				865F88381EC02D000073DED2 /* UIBarButtonItem+DBExtension.h */,
+				865F88391EC02D000073DED2 /* UIBarButtonItem+DBExtension.m */,
+				865F883A1EC02D000073DED2 /* UIColor+DBExtension.h */,
+				865F883B1EC02D000073DED2 /* UIColor+DBExtension.m */,
+				865F883C1EC02D000073DED2 /* UIImage+DBExtension.h */,
+				865F883D1EC02D000073DED2 /* UIImage+DBExtension.m */,
+				865F883E1EC02D000073DED2 /* UIView+DBExtension.h */,
+				865F883F1EC02D000073DED2 /* UIView+DBExtension.m */,
+			);
+			path = DBCategories;
+			sourceTree = "<group>";
+		};
+		865F88411EC02D000073DED2 /* DBUIKits */ = {
+			isa = PBXGroup;
+			children = (
+				865F88421EC02D000073DED2 /* DBTextField.h */,
+				865F88431EC02D000073DED2 /* DBTextField.m */,
+				865F88441EC02D000073DED2 /* DBVerticalButton.h */,
+				865F88451EC02D000073DED2 /* DBVerticalButton.m */,
+			);
+			path = DBUIKits;
+			sourceTree = "<group>";
+		};
 		86BC171F1EBC5140005936FC = {
 			isa = PBXGroup;
 			children = (
@@ -126,7 +167,7 @@
 		86BC172A1EBC5140005936FC /* DBKitDemo */ = {
 			isa = PBXGroup;
 			children = (
-				86BC175E1EBC6437005936FC /* DBKit */,
+				865F88321EC02D000073DED2 /* DBKits */,
 				86BC172E1EBC5140005936FC /* AppDelegate.h */,
 				86BC172F1EBC5140005936FC /* AppDelegate.m */,
 				86BC17311EBC5140005936FC /* ViewController.h */,
@@ -164,47 +205,6 @@
 				86BC17521EBC5140005936FC /* Info.plist */,
 			);
 			path = DBKitDemoUITests;
-			sourceTree = "<group>";
-		};
-		86BC175E1EBC6437005936FC /* DBKit */ = {
-			isa = PBXGroup;
-			children = (
-				86BC175F1EBC6437005936FC /* DBCategory */,
-				86BC176C1EBC6437005936FC /* DBKit.h */,
-				86BC176D1EBC6437005936FC /* DBUIKit */,
-			);
-			name = DBKit;
-			path = ../../DBKit;
-			sourceTree = "<group>";
-		};
-		86BC175F1EBC6437005936FC /* DBCategory */ = {
-			isa = PBXGroup;
-			children = (
-				86BC17601EBC6437005936FC /* NSDate+DBExtension.h */,
-				86BC17611EBC6437005936FC /* NSDate+DBExtension.m */,
-				86BC17621EBC6437005936FC /* NSString+DBExtension.h */,
-				86BC17631EBC6437005936FC /* NSString+DBExtension.m */,
-				86BC17641EBC6437005936FC /* UIBarButtonItem+DBExtension.h */,
-				86BC17651EBC6437005936FC /* UIBarButtonItem+DBExtension.m */,
-				86BC17661EBC6437005936FC /* UIColor+DBExtension.h */,
-				86BC17671EBC6437005936FC /* UIColor+DBExtension.m */,
-				86BC17681EBC6437005936FC /* UIImage+DBExtension.h */,
-				86BC17691EBC6437005936FC /* UIImage+DBExtension.m */,
-				86BC176A1EBC6437005936FC /* UIView+DBExtension.h */,
-				86BC176B1EBC6437005936FC /* UIView+DBExtension.m */,
-			);
-			path = DBCategory;
-			sourceTree = "<group>";
-		};
-		86BC176D1EBC6437005936FC /* DBUIKit */ = {
-			isa = PBXGroup;
-			children = (
-				86BC176E1EBC6437005936FC /* DBTextField.h */,
-				86BC176F1EBC6437005936FC /* DBTextField.m */,
-				86BC17701EBC6437005936FC /* DBVerticalButton.h */,
-				86BC17711EBC6437005936FC /* DBVerticalButton.m */,
-			);
-			path = DBUIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,17 +343,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86BC17721EBC6437005936FC /* NSDate+DBExtension.m in Sources */,
+				865F88461EC02D000073DED2 /* NSDate+DBExtension.m in Sources */,
 				86BC17331EBC5140005936FC /* ViewController.m in Sources */,
-				86BC17751EBC6437005936FC /* UIColor+DBExtension.m in Sources */,
-				86BC17781EBC6437005936FC /* DBTextField.m in Sources */,
-				86BC17731EBC6437005936FC /* NSString+DBExtension.m in Sources */,
-				86BC17771EBC6437005936FC /* UIView+DBExtension.m in Sources */,
+				865F88491EC02D000073DED2 /* UIColor+DBExtension.m in Sources */,
+				865F884C1EC02D000073DED2 /* DBTextField.m in Sources */,
+				865F88471EC02D000073DED2 /* NSString+DBExtension.m in Sources */,
+				865F884B1EC02D000073DED2 /* UIView+DBExtension.m in Sources */,
 				86BC17301EBC5140005936FC /* AppDelegate.m in Sources */,
-				86BC17741EBC6437005936FC /* UIBarButtonItem+DBExtension.m in Sources */,
-				86BC17791EBC6437005936FC /* DBVerticalButton.m in Sources */,
+				865F88481EC02D000073DED2 /* UIBarButtonItem+DBExtension.m in Sources */,
+				865F884D1EC02D000073DED2 /* DBVerticalButton.m in Sources */,
 				86BC172D1EBC5140005936FC /* main.m in Sources */,
-				86BC17761EBC6437005936FC /* UIImage+DBExtension.m in Sources */,
+				865F884A1EC02D000073DED2 /* UIImage+DBExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
