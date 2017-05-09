@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8642A35B1EC1A7720050210F /* DBWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8642A35A1EC1A7720050210F /* DBWebViewController.m */; };
 		865F88461EC02D000073DED2 /* NSDate+DBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 865F88351EC02D000073DED2 /* NSDate+DBExtension.m */; };
 		865F88471EC02D000073DED2 /* NSString+DBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 865F88371EC02D000073DED2 /* NSString+DBExtension.m */; };
 		865F88481EC02D000073DED2 /* UIBarButtonItem+DBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 865F88391EC02D000073DED2 /* UIBarButtonItem+DBExtension.m */; };
@@ -44,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		8642A3571EC1A3D90050210F /* DBKits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBKits.h; sourceTree = "<group>"; };
+		8642A3591EC1A7720050210F /* DBWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBWebViewController.h; sourceTree = "<group>"; };
+		8642A35A1EC1A7720050210F /* DBWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBWebViewController.m; sourceTree = "<group>"; };
 		865F88341EC02D000073DED2 /* NSDate+DBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DBExtension.h"; sourceTree = "<group>"; };
 		865F88351EC02D000073DED2 /* NSDate+DBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DBExtension.m"; sourceTree = "<group>"; };
 		865F88361EC02D000073DED2 /* NSString+DBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DBExtension.h"; sourceTree = "<group>"; };
@@ -103,10 +106,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8642A3581EC1A5F80050210F /* DBWebKits */ = {
+			isa = PBXGroup;
+			children = (
+				8642A3591EC1A7720050210F /* DBWebViewController.h */,
+				8642A35A1EC1A7720050210F /* DBWebViewController.m */,
+			);
+			path = DBWebKits;
+			sourceTree = "<group>";
+		};
 		865F88321EC02D000073DED2 /* DBKits */ = {
 			isa = PBXGroup;
 			children = (
 				8642A3571EC1A3D90050210F /* DBKits.h */,
+				8642A3581EC1A5F80050210F /* DBWebKits */,
 				865F88331EC02D000073DED2 /* DBCategories */,
 				865F88411EC02D000073DED2 /* DBUIKits */,
 			);
@@ -346,6 +359,7 @@
 				865F88461EC02D000073DED2 /* NSDate+DBExtension.m in Sources */,
 				86BC17331EBC5140005936FC /* ViewController.m in Sources */,
 				865F88491EC02D000073DED2 /* UIColor+DBExtension.m in Sources */,
+				8642A35B1EC1A7720050210F /* DBWebViewController.m in Sources */,
 				865F884C1EC02D000073DED2 /* DBTextField.m in Sources */,
 				865F88471EC02D000073DED2 /* NSString+DBExtension.m in Sources */,
 				865F884B1EC02D000073DED2 /* UIView+DBExtension.m in Sources */,
@@ -504,6 +518,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W58KGB664J;
 				INFOPLIST_FILE = DBKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.dabay.DBKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -516,6 +531,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W58KGB664J;
 				INFOPLIST_FILE = DBKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.dabay.DBKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

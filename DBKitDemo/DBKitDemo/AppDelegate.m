@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "DBWebViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,21 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    UIWindow *window=[[UIWindow alloc]init];
+    self.window=window;
+    
+    DBWebViewController *db_webVC=[[DBWebViewController alloc]init];
+    db_webVC.view.backgroundColor=[UIColor redColor];
+    self.window.rootViewController=[[UINavigationController alloc]initWithRootViewController:db_webVC];
+    
+    
+    
+    
+    
+    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 
