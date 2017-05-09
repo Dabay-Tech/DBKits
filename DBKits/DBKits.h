@@ -1,7 +1,7 @@
 //
-//  DBKit.h
+//  DBKits.h
 //
-//  Copyright (c) 2014-2017 DBKit https://github.com/Dabay-Tech/DBKit
+//  Copyright (c) 2014-2017 DBKit https://github.com/Dabay-Tech/DBKits
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -21,8 +21,8 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-#ifndef DBKit_h
-#define DBKit_h
+#ifndef DBKits_h
+#define DBKits_h
 
 
 //UI控件
@@ -38,4 +38,4 @@
 #import "UIBarButtonItem+DBExtension.h"
 
 
-#endif /* DBKit_h */
+#endif /* DBKits_h */
