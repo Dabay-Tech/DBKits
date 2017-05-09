@@ -43,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8642A3571EC1A3D90050210F /* DBKits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBKits.h; sourceTree = "<group>"; };
 		865F88341EC02D000073DED2 /* NSDate+DBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DBExtension.h"; sourceTree = "<group>"; };
 		865F88351EC02D000073DED2 /* NSDate+DBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DBExtension.m"; sourceTree = "<group>"; };
 		865F88361EC02D000073DED2 /* NSString+DBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DBExtension.h"; sourceTree = "<group>"; };
@@ -55,7 +56,6 @@
 		865F883D1EC02D000073DED2 /* UIImage+DBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DBExtension.m"; sourceTree = "<group>"; };
 		865F883E1EC02D000073DED2 /* UIView+DBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DBExtension.h"; sourceTree = "<group>"; };
 		865F883F1EC02D000073DED2 /* UIView+DBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DBExtension.m"; sourceTree = "<group>"; };
-		865F88401EC02D000073DED2 /* DBKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBKit.h; sourceTree = "<group>"; };
 		865F88421EC02D000073DED2 /* DBTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBTextField.h; sourceTree = "<group>"; };
 		865F88431EC02D000073DED2 /* DBTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBTextField.m; sourceTree = "<group>"; };
 		865F88441EC02D000073DED2 /* DBVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBVerticalButton.h; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 		865F88321EC02D000073DED2 /* DBKits */ = {
 			isa = PBXGroup;
 			children = (
-				865F88401EC02D000073DED2 /* DBKit.h */,
+				8642A3571EC1A3D90050210F /* DBKits.h */,
 				865F88331EC02D000073DED2 /* DBCategories */,
 				865F88411EC02D000073DED2 /* DBUIKits */,
 			);

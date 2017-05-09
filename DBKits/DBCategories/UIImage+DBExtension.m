@@ -11,10 +11,10 @@
 @implementation UIImage (DBExtension)
 
 
-
 /**
- *圆形图片
- *
+ 创建一个圆形的图片
+
+ @return 返回一个新创建的圆形的图片
  */
 -(UIImage *)db_circleImage{
     

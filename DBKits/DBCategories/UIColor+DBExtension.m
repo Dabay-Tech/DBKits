@@ -10,6 +10,31 @@
 
 @implementation UIColor (DBExtension)
 
+
+/**
+ 从十六进制字符串获取颜色，返回不带透明度的颜色
+ 
+ @param color 支持@“#123456”、 @“0X123456”、 @“123456”三种格式
+ @return 返回UIColor类型的不带透明度的颜色
+ */
++ (UIColor *)db_colorWithHexString:(NSString *)color
+{
+    return [self db_colorWithHexString:color alpha:1.0f];
+}
+
+
+
+
+
+
+
+/**
+ 从十六进制字符串获取颜色,返回带透明度的颜色
+ 
+ @param color 支持@“#123456”、 @“0X123456”、 @“123456”三种格式
+ @param alpha 颜色的透明度
+ @return 返回UIColor类型的带透明度的颜色
+ */
 + (UIColor *)db_colorWithHexString:(NSString *)color alpha:(CGFloat)alpha
 {
     //删除字符串中的空格
@@ -55,12 +80,5 @@
     [[NSScanner scannerWithString:bString] scanHexInt:&b];
     return [UIColor colorWithRed:((float)r / 255.0f) green:((float)g / 255.0f) blue:((float)b / 255.0f) alpha:alpha];
 }
-
-//默认alpha值为1
-+ (UIColor *)db_colorWithHexString:(NSString *)color
-{
-    return [self db_colorWithHexString:color alpha:1.0f];
-}
-
 
 @end

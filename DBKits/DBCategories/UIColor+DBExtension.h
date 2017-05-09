@@ -10,10 +10,27 @@
 
 @interface UIColor (DBExtension)
 
+
+
+
+
+/**
+ 从十六进制字符串获取颜色，返回不带透明度的颜色
+
+ @param color 支持@“#123456”、 @“0X123456”、 @“123456”三种格式
+ @return 返回UIColor类型的不带透明度的颜色
+ */
 + (UIColor *)db_colorWithHexString:(NSString *)color;
 
-//从十六进制字符串获取颜色，
-//color:支持@“#123456”、 @“0X123456”、 @“123456”三种格式
+
+
+/**
+ 从十六进制字符串获取颜色,返回带透明度的颜色
+
+ @param color 支持@“#123456”、 @“0X123456”、 @“123456”三种格式
+ @param alpha 颜色的透明度
+ @return 返回UIColor类型的带透明度的颜色
+ */
 + (UIColor *)db_colorWithHexString:(NSString *)color alpha:(CGFloat)alpha;
 
 
