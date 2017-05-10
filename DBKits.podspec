@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "DBKits"
-  s.version      = "1.1.3"
+  s.version      = "1.1.5"
   s.summary      = "Dabay tech : DBKits is useful UI tools."
   s.homepage     = "https://github.com/Dabay-Tech/DBKits"
   s.license      = "Apache-2.0"
