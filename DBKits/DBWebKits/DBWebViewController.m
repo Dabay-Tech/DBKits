@@ -65,7 +65,7 @@
     
 
     NSURL *url = [NSURL URLWithString:self.db_urlString];
-    NSLog(@"\n请求地址 url = %@",url);
+    NSLog(@"请求地址 url = %@",url);
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [self.webView loadRequest:request];
 }

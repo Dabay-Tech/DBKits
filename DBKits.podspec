@@ -11,5 +11,6 @@ Pod::Spec.new do |s|
   s.source_files = "DBKits/**/*.{h,m}"
   s.frameworks   = "UIKit",'Accelerate',"Security"
   s.requires_arc = true
+  s.dependency  "MBProgressHUD-DBExtension", "~> 1.0.0"
 
 end

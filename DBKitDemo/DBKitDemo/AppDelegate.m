@@ -21,9 +21,10 @@
     UIWindow *window=[[UIWindow alloc]init];
     self.window=window;
     
-    DBWebViewController *db_webVC=[[DBWebViewController alloc]init];
-    db_webVC.view.backgroundColor=[UIColor redColor];
-    self.window.rootViewController=[[UINavigationController alloc]initWithRootViewController:db_webVC];
+    DBWebViewController *webVC=[[DBWebViewController alloc]init];
+    webVC.db_urlString =@"http://taofei.me";
+    webVC.view.backgroundColor=[UIColor redColor];
+    self.window.rootViewController=[[UINavigationController alloc]initWithRootViewController:webVC];
     
     
     
