@@ -18,13 +18,17 @@
 
 @implementation DBWebViewController
 
+
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     
+    //初始化控制器
     [self setup];
     
-    
 }
+
+
 
 
 
@@ -34,6 +38,7 @@
 -(void)setup{
 
 
+    self.title=@"博客";
     
     CGRect topframe = CGRectMake(0,0,[UIScreen mainScreen].bounds.size.width,20);
     UIView *topview = [[UIView alloc] initWithFrame:topframe];
@@ -50,8 +55,7 @@
     CGRect bounds = CGRectMake(0, 20, width, height-20);
     self.webView = [[WKWebView alloc]initWithFrame:bounds configuration:configuration];
     self.webView.scrollView.backgroundColor = [UIColor whiteColor];
-    //注册方法
-    [self.userContentController addScriptMessageHandler:self  name:@"FinishPageByJs"];//注册一个name为backToTab的js方法
+
     
     
     [self.view addSubview:self.webView];
@@ -59,9 +63,8 @@
     self.webView.navigationDelegate = self;
     self.webView.scrollView.bounces = NO;
     
-    
-    NSString *Url = [NSString stringWithFormat:@"http://taofei.me"];
-    NSURL *url = [NSURL URLWithString:Url];
+
+    NSURL *url = [NSURL URLWithString:self.db_urlString];
     NSLog(@"\n请求地址 url = %@",url);
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [self.webView loadRequest:request];
@@ -138,20 +141,14 @@
     if ([challenge.protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodServerTrust]) {
         
         if ([challenge previousFailureCount] == 0) {
-            
             NSURLCredential *credential = [NSURLCredential credentialForTrust:challenge.protectionSpace.serverTrust];
-            
             completionHandler(NSURLSessionAuthChallengeUseCredential, credential);
-            
         } else {
-            
             completionHandler(NSURLSessionAuthChallengeCancelAuthenticationChallenge, nil);
         }
     } else {
         completionHandler(NSURLSessionAuthChallengeCancelAuthenticationChallenge, nil);
     }
 }
-
-
 
 @end
