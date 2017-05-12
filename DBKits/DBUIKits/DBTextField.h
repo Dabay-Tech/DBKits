@@ -10,4 +10,6 @@
 
 @interface DBTextField : UITextField
 
+@property(nonatomic,strong) UIColor * db_placeholderColor;
+
 @end

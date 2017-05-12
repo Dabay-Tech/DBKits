@@ -9,6 +9,9 @@
 
 @interface DBVerticalButton : UIButton
 
+
+
+
 -(void)db_setupHeaderViewButton:(NSString *)image selectedImage:(NSString *)selectedImage titleName:(NSString *)titleName;
 
 @end

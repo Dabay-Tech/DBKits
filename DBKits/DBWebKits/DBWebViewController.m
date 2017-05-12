@@ -8,6 +8,7 @@
 
 #import "DBWebViewController.h"
 #import <WebKit/WebKit.h>
+#import <MBProgressHUD+DBExtension.h>
 
 @interface DBWebViewController ()<WKNavigationDelegate,WKUIDelegate,WKScriptMessageHandler>
 
@@ -77,6 +78,7 @@
 // 页面开始加载时调用--用来追踪加载过程
 - (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation{
 
+    [MBProgressHUD db_showMessage:@"加载中"];
     NSLog(@"页面开始加载时调用--用来追踪加载过程--页面开始加载");
 }
 // 当内容开始返回时调用--用来追踪加载过程
@@ -87,10 +89,12 @@
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation{
 
     NSLog(@"页面加载完成之后调用--用来追踪加载过程--页面加载完成");
+//    [[[UIApplication sharedApplication].windows lastObject] removeFromSuperview];
 }
 // 页面加载失败时调用--用来追踪加载过程
 - (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(WKNavigation *)navigation{
     NSLog(@"页面加载失败时调用--用来追踪加载过程--页面加载加载失败");
+    [MBProgressHUD db_showMessage:@"页面加载失败"];
 }
 
 #pragma mark - WKNavigationDelegate--页面跳转的代理方法

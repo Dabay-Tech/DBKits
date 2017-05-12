@@ -18,7 +18,7 @@
     //设置占位文字的颜色
     [self resignFirstResponder];
     //设置光标的颜色与文字颜色一致
-    [self setTintColor:[UIColor whiteColor]];
+    [self setTintColor:self.db_placeholderColor];
 }
 
 
@@ -26,7 +26,7 @@
  *当前文本框聚焦时调用
  */
 -(BOOL)becomeFirstResponder{
-    [self setValue:[UIColor whiteColor] forKeyPath:@"_placeholderLabel.textColor"];
+    [self setValue:self.db_placeholderColor forKeyPath:@"_placeholderLabel.textColor"];
     return [super becomeFirstResponder];
 }
 

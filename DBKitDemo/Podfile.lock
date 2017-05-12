@@ -1,0 +1,12 @@
+PODS:
+  - MBProgressHUD-DBExtension (1.0.0)
+
+DEPENDENCIES:
+  - MBProgressHUD-DBExtension
+
+SPEC CHECKSUMS:
+  MBProgressHUD-DBExtension: 8a2f29c2dfc569f2c185e0df4e4604fe5f5f04ac
+
+PODFILE CHECKSUM: fa0a9953b3ff72b3626475dbdde6d7b8c8703a57
+
+COCOAPODS: 1.2.1
