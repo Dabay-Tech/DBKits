@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		863C1B221ED2DC960090BDAA /* DBLoadingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 863C1B211ED2DC960090BDAA /* DBLoadingImageView.m */; };
+		863C1B241ED2DD050090BDAA /* loading_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 863C1B231ED2DD050090BDAA /* loading_bg@2x.png */; };
 		8642A35B1EC1A7720050210F /* DBWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8642A35A1EC1A7720050210F /* DBWebViewController.m */; };
 		865F88461EC02D000073DED2 /* NSDate+DBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 865F88351EC02D000073DED2 /* NSDate+DBExtension.m */; };
 		865F88471EC02D000073DED2 /* NSString+DBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 865F88371EC02D000073DED2 /* NSString+DBExtension.m */; };
@@ -48,6 +50,9 @@
 		3D710F9C43B2E9205A80DA01 /* Pods-DBKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBKitDemo/Pods-DBKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		58E06C06F70E9DE63159192A /* libPods-DBKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DBKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		833F6CC631A49DFAB783113C /* Pods-DBKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DBKitDemo/Pods-DBKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		863C1B201ED2DC960090BDAA /* DBLoadingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBLoadingImageView.h; sourceTree = "<group>"; };
+		863C1B211ED2DC960090BDAA /* DBLoadingImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBLoadingImageView.m; sourceTree = "<group>"; };
+		863C1B231ED2DD050090BDAA /* loading_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loading_bg@2x.png"; sourceTree = "<group>"; };
 		8642A3571EC1A3D90050210F /* DBKits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBKits.h; sourceTree = "<group>"; };
 		8642A3591EC1A7720050210F /* DBWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBWebViewController.h; sourceTree = "<group>"; };
 		8642A35A1EC1A7720050210F /* DBWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBWebViewController.m; sourceTree = "<group>"; };
@@ -167,6 +172,9 @@
 				865F88431EC02D000073DED2 /* DBTextField.m */,
 				865F88441EC02D000073DED2 /* DBVerticalButton.h */,
 				865F88451EC02D000073DED2 /* DBVerticalButton.m */,
+				863C1B231ED2DD050090BDAA /* loading_bg@2x.png */,
+				863C1B201ED2DC960090BDAA /* DBLoadingImageView.h */,
+				863C1B211ED2DC960090BDAA /* DBLoadingImageView.m */,
 			);
 			path = DBUIKits;
 			sourceTree = "<group>";
@@ -356,6 +364,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				863C1B241ED2DD050090BDAA /* loading_bg@2x.png in Resources */,
 				86BC173B1EBC5140005936FC /* LaunchScreen.storyboard in Resources */,
 				86BC17381EBC5140005936FC /* Assets.xcassets in Resources */,
 				86BC17361EBC5140005936FC /* Main.storyboard in Resources */,
@@ -438,6 +447,7 @@
 				865F884C1EC02D000073DED2 /* DBTextField.m in Sources */,
 				865F88471EC02D000073DED2 /* NSString+DBExtension.m in Sources */,
 				865F884B1EC02D000073DED2 /* UIView+DBExtension.m in Sources */,
+				863C1B221ED2DC960090BDAA /* DBLoadingImageView.m in Sources */,
 				86BC17301EBC5140005936FC /* AppDelegate.m in Sources */,
 				865F88481EC02D000073DED2 /* UIBarButtonItem+DBExtension.m in Sources */,
 				865F884D1EC02D000073DED2 /* DBVerticalButton.m in Sources */,

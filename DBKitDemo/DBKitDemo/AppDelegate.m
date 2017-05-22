@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "DBWebViewController.h"
+#import "ViewController.h"
+#import "DBLoadingImageView.h"
 
 @interface AppDelegate ()
 
@@ -21,14 +23,27 @@
     UIWindow *window=[[UIWindow alloc]init];
     self.window=window;
     
-    DBWebViewController *webVC=[[DBWebViewController alloc]init];
-    webVC.db_urlString =@"http://taofei.me";
-    webVC.view.backgroundColor=[UIColor redColor];
-    self.window.rootViewController=[[UINavigationController alloc]initWithRootViewController:webVC];
+//    DBWebViewController *webVC=[[DBWebViewController alloc]init];
+//    webVC.db_urlString =@"http://taofei.me";
+//    webVC.view.backgroundColor=[UIColor redColor];
+//    
+//    DBLoadingImageView *imageView=[[DBLoadingImageView alloc]init];
+//    imageView.frame=CGRectMake(100, 100, 100, 100);
+//
+//    [webVC.view insertSubview:imageView atIndex:0];
+//    
+//    self.window.rootViewController=[[UINavigationController alloc]initWithRootViewController:webVC];
     
+    UIViewController * vc=[[UIViewController alloc]init];
+    vc.view.frame=[UIScreen mainScreen].bounds;
+    vc.view.backgroundColor=[UIColor lightGrayColor];
     
+    DBLoadingImageView *imageView=[[DBLoadingImageView alloc]init];
+    imageView.frame=CGRectMake(100, 100, 100, 100);
     
+    [vc.view addSubview:imageView];
     
+    self.window.rootViewController=vc;
     
     [self.window makeKeyAndVisible];
     

@@ -78,7 +78,7 @@
 // 页面开始加载时调用--用来追踪加载过程
 - (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation{
 
-    [MBProgressHUD db_showMessage:@"加载中"];
+//    [MBProgressHUD db_showMessage:@"加载中"];
     NSLog(@"页面开始加载时调用--用来追踪加载过程--页面开始加载");
 }
 // 当内容开始返回时调用--用来追踪加载过程
