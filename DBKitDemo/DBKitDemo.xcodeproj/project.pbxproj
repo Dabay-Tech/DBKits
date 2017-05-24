@@ -22,6 +22,7 @@
 		8660419C1ED52C0300EB9250 /* UITabBarController+DBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8660419B1ED52C0300EB9250 /* UITabBarController+DBExtension.m */; };
 		8660419F1ED5333200EB9250 /* UIViewController+DBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8660419E1ED5333200EB9250 /* UIViewController+DBExtension.m */; };
 		866041A21ED5339100EB9250 /* UINavigationController+DBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 866041A11ED5339100EB9250 /* UINavigationController+DBExtension.m */; };
+		866041A51ED5590700EB9250 /* UIWindow+DBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 866041A41ED5590700EB9250 /* UIWindow+DBExtension.m */; };
 		86BC172D1EBC5140005936FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BC172C1EBC5140005936FC /* main.m */; };
 		86BC17301EBC5140005936FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BC172F1EBC5140005936FC /* AppDelegate.m */; };
 		86BC17331EBC5140005936FC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BC17321EBC5140005936FC /* ViewController.m */; };
@@ -84,6 +85,8 @@
 		8660419E1ED5333200EB9250 /* UIViewController+DBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DBExtension.m"; sourceTree = "<group>"; };
 		866041A01ED5339100EB9250 /* UINavigationController+DBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+DBExtension.h"; sourceTree = "<group>"; };
 		866041A11ED5339100EB9250 /* UINavigationController+DBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+DBExtension.m"; sourceTree = "<group>"; };
+		866041A31ED5590700EB9250 /* UIWindow+DBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+DBExtension.h"; sourceTree = "<group>"; };
+		866041A41ED5590700EB9250 /* UIWindow+DBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+DBExtension.m"; sourceTree = "<group>"; };
 		86BC17281EBC5140005936FC /* DBKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86BC172C1EBC5140005936FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		86BC172E1EBC5140005936FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -181,6 +184,8 @@
 				866041A11ED5339100EB9250 /* UINavigationController+DBExtension.m */,
 				8660419A1ED52C0300EB9250 /* UITabBarController+DBExtension.h */,
 				8660419B1ED52C0300EB9250 /* UITabBarController+DBExtension.m */,
+				866041A31ED5590700EB9250 /* UIWindow+DBExtension.h */,
+				866041A41ED5590700EB9250 /* UIWindow+DBExtension.m */,
 			);
 			path = DBCategories;
 			sourceTree = "<group>";
@@ -463,6 +468,7 @@
 				865F88461EC02D000073DED2 /* NSDate+DBExtension.m in Sources */,
 				86BC17331EBC5140005936FC /* ViewController.m in Sources */,
 				8660419C1ED52C0300EB9250 /* UITabBarController+DBExtension.m in Sources */,
+				866041A51ED5590700EB9250 /* UIWindow+DBExtension.m in Sources */,
 				865F88491EC02D000073DED2 /* UIColor+DBExtension.m in Sources */,
 				8660419F1ED5333200EB9250 /* UIViewController+DBExtension.m in Sources */,
 				8642A35B1EC1A7720050210F /* DBWebViewController.m in Sources */,

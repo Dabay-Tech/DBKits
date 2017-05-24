@@ -73,6 +73,9 @@
 
 
 
+
+
+
 #pragma mark - WKNavigationDelegate--页面加载过程的追踪的代理方法
 
 // 页面开始加载时调用--用来追踪加载过程
@@ -96,6 +99,10 @@
     NSLog(@"页面加载失败时调用--用来追踪加载过程--页面加载加载失败");
     [MBProgressHUD db_showMessage:@"页面加载失败"];
 }
+
+
+
+
 
 #pragma mark - WKNavigationDelegate--页面跳转的代理方法
 
@@ -121,6 +128,11 @@
     NSLog(@"在发送请求之前，决定是否跳转--页面跳转的代理方法--服务器");
 }
 
+
+
+
+
+
 #pragma mark - WKUIDelegate--处理web界面的三种提示框(警告框、确认框、输入框)
 /**
  *  web界面中有弹出警告框时调用
@@ -133,6 +145,12 @@
 
 
 }
+
+
+
+
+
+
 
 #pragma mark - WKScriptMessageHandler--
 // 从web界面中接收到一个脚本时调用

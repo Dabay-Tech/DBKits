@@ -28,6 +28,7 @@
             [array addObject:controller];
             [nav setViewControllers:array];
         }
+        
         NSLog(@"TF---tabBar控制器--%@",nav.childViewControllers.lastObject);
     }
     NSLog(@"TF---tabBar控制器--%@",self.childViewControllers);

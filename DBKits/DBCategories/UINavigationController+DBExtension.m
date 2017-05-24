@@ -20,9 +20,11 @@
  */
 -(void)db_setNavigationBarBackgroundColor:(UIColor *)BackgroundColor{
 
+    
     UIImage *image=[[UIImage alloc]init];
     [self.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
     self.navigationBar.barStyle=UIBarStyleBlackOpaque;
+    
     //这里调用的设置颜色的方法在UINavigationBar+DBExtension中有重写
     [self.navigationBar setBackgroundColor:BackgroundColor];
 }
