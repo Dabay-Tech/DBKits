@@ -10,6 +10,7 @@
 #import "DBWebViewController.h"
 #import "ViewController.h"
 #import "DBLoadingImageView.h"
+#import "UINavigationController+DBExtension.h"
 
 @interface AppDelegate ()
 
@@ -22,6 +23,17 @@
     
     UIWindow *window=[[UIWindow alloc]init];
     self.window=window;
+    [self.window makeKeyAndVisible];
+    
+    
+    //测试-设置导航栏颜色的方法
+    UIViewController *vc=[[UIViewController alloc]init];
+    vc.view.frame=[UIScreen mainScreen].bounds;
+    UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:vc];
+    [nav db_setNavigationBarBackgroundColor:[UIColor redColor]];
+    self.window.rootViewController=nav;
+    
+    
     
 //    DBWebViewController *webVC=[[DBWebViewController alloc]init];
 //    webVC.db_urlString =@"http://taofei.me";
@@ -34,18 +46,17 @@
 //    
 //    self.window.rootViewController=[[UINavigationController alloc]initWithRootViewController:webVC];
     
-    UIViewController * vc=[[UIViewController alloc]init];
-    vc.view.frame=[UIScreen mainScreen].bounds;
-    vc.view.backgroundColor=[UIColor lightGrayColor];
+//    UIViewController * vc=[[UIViewController alloc]init];
+//    vc.view.frame=[UIScreen mainScreen].bounds;
+//    vc.view.backgroundColor=[UIColor lightGrayColor];
     
-    DBLoadingImageView *imageView=[[DBLoadingImageView alloc]init];
-    imageView.frame=CGRectMake(100, 100, 100, 100);
+//    DBLoadingImageView *imageView=[[DBLoadingImageView alloc]init];
+//    imageView.frame=CGRectMake(100, 100, 100, 100);
+//    
+//    [vc.view addSubview:imageView];
+//    
+//    self.window.rootViewController=vc;
     
-    [vc.view addSubview:imageView];
-    
-    self.window.rootViewController=vc;
-    
-    [self.window makeKeyAndVisible];
     
     
     return YES;
