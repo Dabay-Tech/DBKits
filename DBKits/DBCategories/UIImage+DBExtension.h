@@ -98,4 +98,38 @@
  */
 + (UIImage *)db_createNonInterpolatedUIImageFormCIImage:(CIImage *)image withSize:(CGFloat) size;
 
+
+
+
+
+#pragma mark - 图片压缩
+
+
+/**
+ *  压缩成指定大小的图片
+ *
+ *  @param newSize 需要压缩的图片尺寸
+ *  @param image   需要压缩的图片
+ *
+ *  @return 压缩后的图片
+ */
++ (UIImage *)db_imageByScaleAndCropingForSize:(CGSize)newSize oldImage:(UIImage *)image;
+
+
+/**
+ *  等比例压缩
+ *
+ *  @param image 需要压缩的图片
+ *  @param size  <#size description#>
+ *
+ *  @return 压缩后的图片
+ */
++ (UIImage *)db_imageCompressForSizeImage:(UIImage *)image targetSize:(CGSize)size;
+
+
++ (UIImage *)db_fixOrientation:(UIImage *)aImage;
+
+
+
+
 @end
