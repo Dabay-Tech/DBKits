@@ -31,8 +31,7 @@
 
 
 
-#pragma mark - 重用标识符：注册cell、sectionHeader、sectionFooter
-// 注意const的位置
+#pragma mark - 重用标识符：注册cell、sectionHeader、sectionFooter  注意const的位置
 static NSString * const db_CollectionCellId = @"db_CollectionCellId";
 static NSString * const db_HeaderId = @"db_HeaderId";
 static NSString * const db_FooterId = @"db_FooterId";
