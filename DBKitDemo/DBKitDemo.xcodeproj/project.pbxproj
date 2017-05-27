@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		861E6CCB1ED67CF60051BF4F /* DBCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 861E6CCA1ED67CF60051BF4F /* DBCollectionViewFlowLayout.m */; };
+		861E6CCE1ED67D390051BF4F /* DBCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 861E6CCD1ED67D390051BF4F /* DBCollectionViewController.m */; };
 		863C1B221ED2DC960090BDAA /* DBLoadingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 863C1B211ED2DC960090BDAA /* DBLoadingImageView.m */; };
 		863C1B241ED2DD050090BDAA /* loading_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 863C1B231ED2DD050090BDAA /* loading_bg@2x.png */; };
 		8642A35B1EC1A7720050210F /* DBWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8642A35A1EC1A7720050210F /* DBWebViewController.m */; };
+		86489A971ED95A4700C0362D /* DBStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 86489A961ED95A4700C0362D /* DBStack.m */; };
+		86489A9A1ED95A5A00C0362D /* DBHeap.m in Sources */ = {isa = PBXBuildFile; fileRef = 86489A991ED95A5A00C0362D /* DBHeap.m */; };
+		86489A9D1ED95B0900C0362D /* DBBinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 86489A9C1ED95B0900C0362D /* DBBinaryTree.m */; };
 		865F88461EC02D000073DED2 /* NSDate+DBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 865F88351EC02D000073DED2 /* NSDate+DBExtension.m */; };
 		865F88471EC02D000073DED2 /* NSString+DBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 865F88371EC02D000073DED2 /* NSString+DBExtension.m */; };
 		865F88481EC02D000073DED2 /* UIBarButtonItem+DBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 865F88391EC02D000073DED2 /* UIBarButtonItem+DBExtension.m */; };
@@ -56,12 +61,22 @@
 		3D710F9C43B2E9205A80DA01 /* Pods-DBKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBKitDemo/Pods-DBKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		58E06C06F70E9DE63159192A /* libPods-DBKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DBKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		833F6CC631A49DFAB783113C /* Pods-DBKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DBKitDemo/Pods-DBKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		861E6CC91ED67CF60051BF4F /* DBCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		861E6CCA1ED67CF60051BF4F /* DBCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		861E6CCC1ED67D390051BF4F /* DBCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCollectionViewController.h; sourceTree = "<group>"; };
+		861E6CCD1ED67D390051BF4F /* DBCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCollectionViewController.m; sourceTree = "<group>"; };
 		863C1B201ED2DC960090BDAA /* DBLoadingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBLoadingImageView.h; sourceTree = "<group>"; };
 		863C1B211ED2DC960090BDAA /* DBLoadingImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBLoadingImageView.m; sourceTree = "<group>"; };
 		863C1B231ED2DD050090BDAA /* loading_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loading_bg@2x.png"; sourceTree = "<group>"; };
 		8642A3571EC1A3D90050210F /* DBKits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBKits.h; sourceTree = "<group>"; };
 		8642A3591EC1A7720050210F /* DBWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBWebViewController.h; sourceTree = "<group>"; };
 		8642A35A1EC1A7720050210F /* DBWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBWebViewController.m; sourceTree = "<group>"; };
+		86489A951ED95A4700C0362D /* DBStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBStack.h; sourceTree = "<group>"; };
+		86489A961ED95A4700C0362D /* DBStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBStack.m; sourceTree = "<group>"; };
+		86489A981ED95A5A00C0362D /* DBHeap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBHeap.h; sourceTree = "<group>"; };
+		86489A991ED95A5A00C0362D /* DBHeap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBHeap.m; sourceTree = "<group>"; };
+		86489A9B1ED95B0900C0362D /* DBBinaryTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBBinaryTree.h; sourceTree = "<group>"; };
+		86489A9C1ED95B0900C0362D /* DBBinaryTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBBinaryTree.m; sourceTree = "<group>"; };
 		865F88341EC02D000073DED2 /* NSDate+DBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DBExtension.h"; sourceTree = "<group>"; };
 		865F88351EC02D000073DED2 /* NSDate+DBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DBExtension.m"; sourceTree = "<group>"; };
 		865F88361EC02D000073DED2 /* NSString+DBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DBExtension.h"; sourceTree = "<group>"; };
@@ -152,10 +167,24 @@
 			path = DBWebKits;
 			sourceTree = "<group>";
 		};
+		86489A941ED958D500C0362D /* DBDataStructure */ = {
+			isa = PBXGroup;
+			children = (
+				86489A951ED95A4700C0362D /* DBStack.h */,
+				86489A961ED95A4700C0362D /* DBStack.m */,
+				86489A981ED95A5A00C0362D /* DBHeap.h */,
+				86489A991ED95A5A00C0362D /* DBHeap.m */,
+				86489A9B1ED95B0900C0362D /* DBBinaryTree.h */,
+				86489A9C1ED95B0900C0362D /* DBBinaryTree.m */,
+			);
+			path = DBDataStructure;
+			sourceTree = "<group>";
+		};
 		865F88321EC02D000073DED2 /* DBKits */ = {
 			isa = PBXGroup;
 			children = (
 				8642A3571EC1A3D90050210F /* DBKits.h */,
+				86489A941ED958D500C0362D /* DBDataStructure */,
 				8642A3581EC1A5F80050210F /* DBWebKits */,
 				865F88331EC02D000073DED2 /* DBCategories */,
 				865F88411EC02D000073DED2 /* DBUIKits */,
@@ -205,6 +234,10 @@
 				863C1B211ED2DC960090BDAA /* DBLoadingImageView.m */,
 				866041A61ED57CC800EB9250 /* DBNavigationViewController.h */,
 				866041A71ED57CC800EB9250 /* DBNavigationViewController.m */,
+				861E6CC91ED67CF60051BF4F /* DBCollectionViewFlowLayout.h */,
+				861E6CCA1ED67CF60051BF4F /* DBCollectionViewFlowLayout.m */,
+				861E6CCC1ED67D390051BF4F /* DBCollectionViewController.h */,
+				861E6CCD1ED67D390051BF4F /* DBCollectionViewController.m */,
 			);
 			path = DBUIKits;
 			sourceTree = "<group>";
@@ -473,21 +506,26 @@
 				865F88461EC02D000073DED2 /* NSDate+DBExtension.m in Sources */,
 				86BC17331EBC5140005936FC /* ViewController.m in Sources */,
 				8660419C1ED52C0300EB9250 /* UITabBarController+DBExtension.m in Sources */,
+				86489A9A1ED95A5A00C0362D /* DBHeap.m in Sources */,
+				86489A9D1ED95B0900C0362D /* DBBinaryTree.m in Sources */,
 				866041A51ED5590700EB9250 /* UIWindow+DBExtension.m in Sources */,
 				865F88491EC02D000073DED2 /* UIColor+DBExtension.m in Sources */,
 				8660419F1ED5333200EB9250 /* UIViewController+DBExtension.m in Sources */,
+				86489A971ED95A4700C0362D /* DBStack.m in Sources */,
 				8642A35B1EC1A7720050210F /* DBWebViewController.m in Sources */,
 				865F884C1EC02D000073DED2 /* DBTextField.m in Sources */,
 				865F88471EC02D000073DED2 /* NSString+DBExtension.m in Sources */,
 				865F884B1EC02D000073DED2 /* UIView+DBExtension.m in Sources */,
 				863C1B221ED2DC960090BDAA /* DBLoadingImageView.m in Sources */,
 				866041A21ED5339100EB9250 /* UINavigationController+DBExtension.m in Sources */,
+				861E6CCE1ED67D390051BF4F /* DBCollectionViewController.m in Sources */,
 				86BC17301EBC5140005936FC /* AppDelegate.m in Sources */,
 				865F88481EC02D000073DED2 /* UIBarButtonItem+DBExtension.m in Sources */,
 				866041A81ED57CC800EB9250 /* DBNavigationViewController.m in Sources */,
 				865F884D1EC02D000073DED2 /* DBVerticalButton.m in Sources */,
 				866041991ED52B3B00EB9250 /* UINavigationBar+DBExtension.m in Sources */,
 				86BC172D1EBC5140005936FC /* main.m in Sources */,
+				861E6CCB1ED67CF60051BF4F /* DBCollectionViewFlowLayout.m in Sources */,
 				865F884A1EC02D000073DED2 /* UIImage+DBExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
