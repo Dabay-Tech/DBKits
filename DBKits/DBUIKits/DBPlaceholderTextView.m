@@ -41,6 +41,7 @@
 
     DBPlaceholderTextView * db_textView = [[DBPlaceholderTextView alloc]initWithFrame:frame];
     
+    
     //初始化placeholderLabel
     UILabel * placeholderLabel = [[UILabel alloc]initWithFrame:CGRectMake(5, 10, frame.size.width, 20)];
     placeholderLabel.backgroundColor = [UIColor clearColor];
@@ -60,8 +61,6 @@
     [db_textView addSubview:limitedTipsLabel];
     
     return db_textView;
-
-
     
 }
 
