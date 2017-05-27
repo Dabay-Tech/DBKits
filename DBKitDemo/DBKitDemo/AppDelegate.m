@@ -11,6 +11,7 @@
 #import "ViewController.h"
 #import "DBLoadingImageView.h"
 #import "UINavigationController+DBExtension.h"
+#import "DBPlaceholderTextView.h"
 
 @interface AppDelegate ()
 
@@ -31,6 +32,17 @@
     vc.view.frame=[UIScreen mainScreen].bounds;
     UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:vc];
     [nav db_setNavigationBarBackgroundColor:[UIColor redColor]];
+    
+    
+    CGRect frame=CGRectMake(100, 100, 200, 200);
+    DBPlaceholderTextView *textView=[DBPlaceholderTextView db_textViewWithFrame:frame placeholderString:@"请输入您的建议~" db_placeholderStringColor:[UIColor redColor] db_limitedCharacter:15 db_limitedCharacter:[UIColor grayColor]];
+    textView.text=@"测试-设置导航栏颜色的方法测试-设置导航栏颜色的方法测试-设置导航栏颜色的方法测试-设置导航栏颜色的方法测试-设置导航栏颜色的方法";
+    [vc.view addSubview:textView];
+    
+    
+    
+    
+    
     self.window.rootViewController=nav;
     
     
