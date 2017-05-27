@@ -15,6 +15,9 @@
 		86489A971ED95A4700C0362D /* DBStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 86489A961ED95A4700C0362D /* DBStack.m */; };
 		86489A9A1ED95A5A00C0362D /* DBHeap.m in Sources */ = {isa = PBXBuildFile; fileRef = 86489A991ED95A5A00C0362D /* DBHeap.m */; };
 		86489A9D1ED95B0900C0362D /* DBBinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 86489A9C1ED95B0900C0362D /* DBBinaryTree.m */; };
+		86489AA01ED9605B00C0362D /* DBRedBlackTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 86489A9F1ED9605B00C0362D /* DBRedBlackTree.m */; };
+		86489AA31ED9634700C0362D /* DBPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86489AA21ED9634700C0362D /* DBPlaceholderTextView.m */; };
+		86489AA61ED96EDF00C0362D /* UITextView+YLTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86489AA51ED96EDF00C0362D /* UITextView+YLTextView.m */; };
 		865F88461EC02D000073DED2 /* NSDate+DBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 865F88351EC02D000073DED2 /* NSDate+DBExtension.m */; };
 		865F88471EC02D000073DED2 /* NSString+DBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 865F88371EC02D000073DED2 /* NSString+DBExtension.m */; };
 		865F88481EC02D000073DED2 /* UIBarButtonItem+DBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 865F88391EC02D000073DED2 /* UIBarButtonItem+DBExtension.m */; };
@@ -77,6 +80,12 @@
 		86489A991ED95A5A00C0362D /* DBHeap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBHeap.m; sourceTree = "<group>"; };
 		86489A9B1ED95B0900C0362D /* DBBinaryTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBBinaryTree.h; sourceTree = "<group>"; };
 		86489A9C1ED95B0900C0362D /* DBBinaryTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBBinaryTree.m; sourceTree = "<group>"; };
+		86489A9E1ED9605B00C0362D /* DBRedBlackTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBRedBlackTree.h; sourceTree = "<group>"; };
+		86489A9F1ED9605B00C0362D /* DBRedBlackTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBRedBlackTree.m; sourceTree = "<group>"; };
+		86489AA11ED9634700C0362D /* DBPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBPlaceholderTextView.h; sourceTree = "<group>"; };
+		86489AA21ED9634700C0362D /* DBPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBPlaceholderTextView.m; sourceTree = "<group>"; };
+		86489AA41ED96EDF00C0362D /* UITextView+YLTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+YLTextView.h"; sourceTree = "<group>"; };
+		86489AA51ED96EDF00C0362D /* UITextView+YLTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+YLTextView.m"; sourceTree = "<group>"; };
 		865F88341EC02D000073DED2 /* NSDate+DBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DBExtension.h"; sourceTree = "<group>"; };
 		865F88351EC02D000073DED2 /* NSDate+DBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DBExtension.m"; sourceTree = "<group>"; };
 		865F88361EC02D000073DED2 /* NSString+DBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DBExtension.h"; sourceTree = "<group>"; };
@@ -176,6 +185,8 @@
 				86489A991ED95A5A00C0362D /* DBHeap.m */,
 				86489A9B1ED95B0900C0362D /* DBBinaryTree.h */,
 				86489A9C1ED95B0900C0362D /* DBBinaryTree.m */,
+				86489A9E1ED9605B00C0362D /* DBRedBlackTree.h */,
+				86489A9F1ED9605B00C0362D /* DBRedBlackTree.m */,
 			);
 			path = DBDataStructure;
 			sourceTree = "<group>";
@@ -238,6 +249,10 @@
 				861E6CCA1ED67CF60051BF4F /* DBCollectionViewFlowLayout.m */,
 				861E6CCC1ED67D390051BF4F /* DBCollectionViewController.h */,
 				861E6CCD1ED67D390051BF4F /* DBCollectionViewController.m */,
+				86489AA11ED9634700C0362D /* DBPlaceholderTextView.h */,
+				86489AA21ED9634700C0362D /* DBPlaceholderTextView.m */,
+				86489AA41ED96EDF00C0362D /* UITextView+YLTextView.h */,
+				86489AA51ED96EDF00C0362D /* UITextView+YLTextView.m */,
 			);
 			path = DBUIKits;
 			sourceTree = "<group>";
@@ -506,6 +521,7 @@
 				865F88461EC02D000073DED2 /* NSDate+DBExtension.m in Sources */,
 				86BC17331EBC5140005936FC /* ViewController.m in Sources */,
 				8660419C1ED52C0300EB9250 /* UITabBarController+DBExtension.m in Sources */,
+				86489AA61ED96EDF00C0362D /* UITextView+YLTextView.m in Sources */,
 				86489A9A1ED95A5A00C0362D /* DBHeap.m in Sources */,
 				86489A9D1ED95B0900C0362D /* DBBinaryTree.m in Sources */,
 				866041A51ED5590700EB9250 /* UIWindow+DBExtension.m in Sources */,
@@ -513,6 +529,7 @@
 				8660419F1ED5333200EB9250 /* UIViewController+DBExtension.m in Sources */,
 				86489A971ED95A4700C0362D /* DBStack.m in Sources */,
 				8642A35B1EC1A7720050210F /* DBWebViewController.m in Sources */,
+				86489AA01ED9605B00C0362D /* DBRedBlackTree.m in Sources */,
 				865F884C1EC02D000073DED2 /* DBTextField.m in Sources */,
 				865F88471EC02D000073DED2 /* NSString+DBExtension.m in Sources */,
 				865F884B1EC02D000073DED2 /* UIView+DBExtension.m in Sources */,
@@ -527,6 +544,7 @@
 				86BC172D1EBC5140005936FC /* main.m in Sources */,
 				861E6CCB1ED67CF60051BF4F /* DBCollectionViewFlowLayout.m in Sources */,
 				865F884A1EC02D000073DED2 /* UIImage+DBExtension.m in Sources */,
+				86489AA31ED9634700C0362D /* DBPlaceholderTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
