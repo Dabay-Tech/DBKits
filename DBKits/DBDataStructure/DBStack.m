@@ -2,16 +2,14 @@
 //  DBStack.m
 //  DBKitDemo
 //
-//  Created by Dabay on 2016/5/27.
-//  Copyright © 2016年 Dabay. All rights reserved.
+//  Created by Dabay on 2015/5/27.
+//  Copyright © 2015年 Dabay. All rights reserved.
 //
 
 #import "DBStack.h"
 
 @interface DBStack()
 
-/** maxSize */
-//@property (nonatomic,assign)NSInteger maxSize;
 
 // 有入栈就有出栈的时候，使用强引用，就要记得释放引用
 /** NSMutableArray */
@@ -31,36 +29,59 @@
 @implementation DBStack
 
 
-// 初始化
 
-// 入栈
+/**
+ 入栈
+ 
+ @param objet 将元素入栈
+ */
 -(void)push:(id)objet{
     [self.stackArray addObject:objet];
 }
 
-// 出栈
+/**
+ 出栈
+ 
+ @return 返回栈顶元素,并将栈顶元素出栈
+ */
 -(instancetype)popTopElement{
     id objc = [self.stackArray lastObject];
     [self.stackArray removeLastObject];
     return objc;
 }
 
-// 返回栈顶元素
+/**
+ 返回栈顶元素
+ 
+ @return 返回栈顶元素，栈顶元素不出栈
+ */
 -(instancetype)TopElement{
     return [self.stackArray lastObject];
 }
 
-// 是否为空
+/**
+ 判断栈是否为空
+ 
+ @return 栈是否为空
+ */
 -(BOOL)isEmpty{
     return self.stackArray.count;
 }
 
-// 栈的长度
+/**
+ 获取栈的深度
+ 
+ @return 栈的深度
+ */
 -(NSInteger)stackLength{
     return self.stackArray.count;
 }
 
-// 从底部开始遍历
+/**
+ 遍历，从栈底开始遍历
+ 
+ @param block StackBlock
+ */
 -(void)traversalElementFromBottom:(StackBlock)block{
     NSEnumerator *objc = [self.stackArray objectEnumerator];
     for (id element in objc) {
@@ -68,7 +89,11 @@
     }
 }
 
-// 从顶部开始遍历
+/**
+ 从顶部开始遍历
+ 
+ @param block StackBlock
+ */
 -(void)traversalElementFromtop:(StackBlock)block{
     // 先获取存储元素的个数
     NSInteger count = self.stackArray.count;
@@ -78,7 +103,11 @@
     }
 }
 
-// 所有元素出栈，同时遍历
+/**
+ 所有元素出栈，一边出栈一边返回元素
+ 
+ @param block StackBlock
+ */
 -(void)traversalElementPopStack:(StackBlock)block{
     // 先获取存储元素的个数
     NSInteger count = self.stackArray.count;
@@ -89,12 +118,18 @@
     }
 }
 
-// 返回栈顶元素
+/**
+ 返回栈顶元素
+ 
+ @return 栈顶元素
+ */
 -(instancetype)topElemet{
     return self.stackArray.lastObject;
 }
 
-// 清空
+/**
+ 清空栈中所有元素
+ */
 -(void)removeAllObjects{
     [self.stackArray removeAllObjects];
 }

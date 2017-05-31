@@ -2,8 +2,8 @@
 //  DBStack.h
 //  DBKitDemo
 //
-//  Created by Dabay on 2016/5/27.
-//  Copyright © 2016年 Dabay. All rights reserved.
+//  Created by Dabay on 2015/5/27.
+//  Copyright © 2015年 Dabay. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -78,7 +78,7 @@ typedef void (^StackBlock)(id objc);
  @param block StackBlock
  */
 -(void)traversalElementPopStack:(StackBlock)block;
-// 清空
+
 
 
 
