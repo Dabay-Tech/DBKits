@@ -18,6 +18,12 @@
 @implementation DBLoadingImageView
 
 
+/**
+ 重写改方法，实现图片的旋转
+ 
+ @param frame 图片的尺寸
+ @return 返回带有旋转效果的imageView
+ */
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {

@@ -11,11 +11,40 @@
 @implementation DBVerticalButton
 
 
+#pragma mark - 初始化DBVerticalButton控件
+
+/**
+ Interface Builder的形式创建控件后设置控件标题文字居中显示
+ */
 -(void)awakeFromNib{
     
     [super awakeFromNib];
     [self setupButton];
+}
 
+/**
+ 通过代码方式创建控件后设置控件标题文字居中显示
+
+ @param frame 控件的尺寸
+ @return 实例化的控件对象
+ */
+-(instancetype)initWithFrame:(CGRect)frame{
+    
+    if(self=[super initWithFrame:frame]){
+        [self setupButton];
+    }
+    return self;
+}
+
+
+#pragma mark - 对实例化的对象进行重新的布局调整
+
+
+/**
+ 设置按钮的标题文字居中显示
+ */
+-(void)setupButton{
+    self.titleLabel.textAlignment=NSTextAlignmentCenter;
 }
 
 
@@ -38,42 +67,29 @@
     self.titleLabel.y=self.imageView.height;
     self.titleLabel.width=self.width;
     self.titleLabel.height=self.height-self.imageView.height;
-
 }
 
 
-
--(instancetype)initWithFrame:(CGRect)frame{
-
-    if(self=[super initWithFrame:frame]){
-        [self setupButton];
-    }
-    return self;
-
-}
-
-
--(void)setupButton{
-
-    self.titleLabel.textAlignment=NSTextAlignmentCenter;
-
-}
-
--(void)db_setupHeaderViewButton:(NSString *)image selectedImage:(NSString *)selectedImage titleName:(NSString *)titleName{
+/**
+ 设置图标在上，标题在下的按钮
+ 
+ @param image 默认的按钮图标
+ @param selectedImage 选中时候的按钮图标
+ @param titleName 按钮的标题
+ */
+-(void)db_setupHeaderViewImage:(NSString *)image selectedImage:(NSString *)selectedImage titleName:(NSString *)titleName{
     
-    //创建一个button
+    //设置按钮图标和标题
     [self setImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
     [self setImage:[UIImage imageNamed:selectedImage] forState:UIControlStateHighlighted];
     [self setTitle:titleName forState:UIControlStateNormal];
     [self setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     
     NSMutableDictionary *atrrs=[NSMutableDictionary dictionary];
-    atrrs[NSFontAttributeName]=[UIFont systemFontOfSize:10];//字体保持一致
+    atrrs[NSFontAttributeName]=[UIFont systemFontOfSize:12];//字体保持一致.默认字体大小为12
     atrrs[NSForegroundColorAttributeName]=[UIColor darkGrayColor];
     NSAttributedString *string=[[NSAttributedString alloc]initWithString:titleName attributes:atrrs];
     [self setAttributedTitle:string forState:UIControlStateNormal];
-    
-    
 }
 
 

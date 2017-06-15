@@ -16,18 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     [self setup];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    
 }
 
 
 -(void)setup{
-
+    
     //设置导航控制器的导航栏的染色颜色
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
 }

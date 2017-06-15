@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76CE8158A78A5CC92BAF9E3C /* libPods-DBKitsDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AF33D5CCF2669DB151472AA /* libPods-DBKitsDemo.a */; };
 		861E6CCB1ED67CF60051BF4F /* DBCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 861E6CCA1ED67CF60051BF4F /* DBCollectionViewFlowLayout.m */; };
 		861E6CCE1ED67D390051BF4F /* DBCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 861E6CCD1ED67D390051BF4F /* DBCollectionViewController.m */; };
 		863C1B221ED2DC960090BDAA /* DBLoadingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 863C1B211ED2DC960090BDAA /* DBLoadingImageView.m */; };
@@ -40,7 +41,6 @@
 		86BC173B1EBC5140005936FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86BC17391EBC5140005936FC /* LaunchScreen.storyboard */; };
 		86BC17461EBC5140005936FC /* DBKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BC17451EBC5140005936FC /* DBKitDemoTests.m */; };
 		86BC17511EBC5140005936FC /* DBKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BC17501EBC5140005936FC /* DBKitDemoUITests.m */; };
-		9FF1C028ADFFA87D48143ACB /* libPods-DBKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58E06C06F70E9DE63159192A /* libPods-DBKitDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,9 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3D710F9C43B2E9205A80DA01 /* Pods-DBKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBKitDemo/Pods-DBKitDemo.release.xcconfig"; sourceTree = "<group>"; };
-		58E06C06F70E9DE63159192A /* libPods-DBKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DBKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		833F6CC631A49DFAB783113C /* Pods-DBKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DBKitDemo/Pods-DBKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		5AF33D5CCF2669DB151472AA /* libPods-DBKitsDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DBKitsDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		861E6CC91ED67CF60051BF4F /* DBCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCollectionViewFlowLayout.h; sourceTree = "<group>"; };
 		861E6CCA1ED67CF60051BF4F /* DBCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		861E6CCC1ED67D390051BF4F /* DBCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCollectionViewController.h; sourceTree = "<group>"; };
@@ -114,7 +112,7 @@
 		866041A41ED5590700EB9250 /* UIWindow+DBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+DBExtension.m"; sourceTree = "<group>"; };
 		866041A61ED57CC800EB9250 /* DBNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBNavigationViewController.h; sourceTree = "<group>"; };
 		866041A71ED57CC800EB9250 /* DBNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBNavigationViewController.m; sourceTree = "<group>"; };
-		86BC17281EBC5140005936FC /* DBKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86BC17281EBC5140005936FC /* DBKitsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBKitsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86BC172C1EBC5140005936FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		86BC172E1EBC5140005936FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		86BC172F1EBC5140005936FC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -124,12 +122,14 @@
 		86BC17371EBC5140005936FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86BC173A1EBC5140005936FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86BC173C1EBC5140005936FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		86BC17411EBC5140005936FC /* DBKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DBKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86BC17411EBC5140005936FC /* DBKitsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DBKitsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86BC17451EBC5140005936FC /* DBKitDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBKitDemoTests.m; sourceTree = "<group>"; };
 		86BC17471EBC5140005936FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		86BC174C1EBC5140005936FC /* DBKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DBKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86BC174C1EBC5140005936FC /* DBKitsDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DBKitsDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86BC17501EBC5140005936FC /* DBKitDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBKitDemoUITests.m; sourceTree = "<group>"; };
 		86BC17521EBC5140005936FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B987DD10F36BDDBC697E1274 /* Pods-DBKitsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBKitsDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DBKitsDemo/Pods-DBKitsDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C9425944F0B994053AF66556 /* Pods-DBKitsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBKitsDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBKitsDemo/Pods-DBKitsDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FF1C028ADFFA87D48143ACB /* libPods-DBKitDemo.a in Frameworks */,
+				76CE8158A78A5CC92BAF9E3C /* libPods-DBKitsDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,8 +161,8 @@
 		6378FE74041273F50F4B89F7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				833F6CC631A49DFAB783113C /* Pods-DBKitDemo.debug.xcconfig */,
-				3D710F9C43B2E9205A80DA01 /* Pods-DBKitDemo.release.xcconfig */,
+				B987DD10F36BDDBC697E1274 /* Pods-DBKitsDemo.debug.xcconfig */,
+				C9425944F0B994053AF66556 /* Pods-DBKitsDemo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -260,9 +260,9 @@
 		86BC171F1EBC5140005936FC = {
 			isa = PBXGroup;
 			children = (
-				86BC172A1EBC5140005936FC /* DBKitDemo */,
-				86BC17441EBC5140005936FC /* DBKitDemoTests */,
-				86BC174F1EBC5140005936FC /* DBKitDemoUITests */,
+				86BC172A1EBC5140005936FC /* DBKitsDemo */,
+				86BC17441EBC5140005936FC /* DBKitsDemoTests */,
+				86BC174F1EBC5140005936FC /* DBKitsDemoUITests */,
 				86BC17291EBC5140005936FC /* Products */,
 				6378FE74041273F50F4B89F7 /* Pods */,
 				C530E5590E446080E70B5F70 /* Frameworks */,
@@ -272,14 +272,14 @@
 		86BC17291EBC5140005936FC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				86BC17281EBC5140005936FC /* DBKitDemo.app */,
-				86BC17411EBC5140005936FC /* DBKitDemoTests.xctest */,
-				86BC174C1EBC5140005936FC /* DBKitDemoUITests.xctest */,
+				86BC17281EBC5140005936FC /* DBKitsDemo.app */,
+				86BC17411EBC5140005936FC /* DBKitsDemoTests.xctest */,
+				86BC174C1EBC5140005936FC /* DBKitsDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		86BC172A1EBC5140005936FC /* DBKitDemo */ = {
+		86BC172A1EBC5140005936FC /* DBKitsDemo */ = {
 			isa = PBXGroup;
 			children = (
 				865F88321EC02D000073DED2 /* DBKits */,
@@ -293,6 +293,7 @@
 				86BC173C1EBC5140005936FC /* Info.plist */,
 				86BC172B1EBC5140005936FC /* Supporting Files */,
 			);
+			name = DBKitsDemo;
 			path = DBKitDemo;
 			sourceTree = "<group>";
 		};
@@ -304,28 +305,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		86BC17441EBC5140005936FC /* DBKitDemoTests */ = {
+		86BC17441EBC5140005936FC /* DBKitsDemoTests */ = {
 			isa = PBXGroup;
 			children = (
 				86BC17451EBC5140005936FC /* DBKitDemoTests.m */,
 				86BC17471EBC5140005936FC /* Info.plist */,
 			);
+			name = DBKitsDemoTests;
 			path = DBKitDemoTests;
 			sourceTree = "<group>";
 		};
-		86BC174F1EBC5140005936FC /* DBKitDemoUITests */ = {
+		86BC174F1EBC5140005936FC /* DBKitsDemoUITests */ = {
 			isa = PBXGroup;
 			children = (
 				86BC17501EBC5140005936FC /* DBKitDemoUITests.m */,
 				86BC17521EBC5140005936FC /* Info.plist */,
 			);
+			name = DBKitsDemoUITests;
 			path = DBKitDemoUITests;
 			sourceTree = "<group>";
 		};
 		C530E5590E446080E70B5F70 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				58E06C06F70E9DE63159192A /* libPods-DBKitDemo.a */,
+				5AF33D5CCF2669DB151472AA /* libPods-DBKitsDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -333,9 +336,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		86BC17271EBC5140005936FC /* DBKitDemo */ = {
+		86BC17271EBC5140005936FC /* DBKitsDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 86BC17551EBC5140005936FC /* Build configuration list for PBXNativeTarget "DBKitDemo" */;
+			buildConfigurationList = 86BC17551EBC5140005936FC /* Build configuration list for PBXNativeTarget "DBKitsDemo" */;
 			buildPhases = (
 				369B4850A348F13AB1E049A9 /* [CP] Check Pods Manifest.lock */,
 				86BC17241EBC5140005936FC /* Sources */,
@@ -348,14 +351,14 @@
 			);
 			dependencies = (
 			);
-			name = DBKitDemo;
+			name = DBKitsDemo;
 			productName = DBKitDemo;
-			productReference = 86BC17281EBC5140005936FC /* DBKitDemo.app */;
+			productReference = 86BC17281EBC5140005936FC /* DBKitsDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		86BC17401EBC5140005936FC /* DBKitDemoTests */ = {
+		86BC17401EBC5140005936FC /* DBKitsDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 86BC17581EBC5140005936FC /* Build configuration list for PBXNativeTarget "DBKitDemoTests" */;
+			buildConfigurationList = 86BC17581EBC5140005936FC /* Build configuration list for PBXNativeTarget "DBKitsDemoTests" */;
 			buildPhases = (
 				86BC173D1EBC5140005936FC /* Sources */,
 				86BC173E1EBC5140005936FC /* Frameworks */,
@@ -366,14 +369,14 @@
 			dependencies = (
 				86BC17431EBC5140005936FC /* PBXTargetDependency */,
 			);
-			name = DBKitDemoTests;
+			name = DBKitsDemoTests;
 			productName = DBKitDemoTests;
-			productReference = 86BC17411EBC5140005936FC /* DBKitDemoTests.xctest */;
+			productReference = 86BC17411EBC5140005936FC /* DBKitsDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		86BC174B1EBC5140005936FC /* DBKitDemoUITests */ = {
+		86BC174B1EBC5140005936FC /* DBKitsDemoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 86BC175B1EBC5140005936FC /* Build configuration list for PBXNativeTarget "DBKitDemoUITests" */;
+			buildConfigurationList = 86BC175B1EBC5140005936FC /* Build configuration list for PBXNativeTarget "DBKitsDemoUITests" */;
 			buildPhases = (
 				86BC17481EBC5140005936FC /* Sources */,
 				86BC17491EBC5140005936FC /* Frameworks */,
@@ -384,9 +387,9 @@
 			dependencies = (
 				86BC174E1EBC5140005936FC /* PBXTargetDependency */,
 			);
-			name = DBKitDemoUITests;
+			name = DBKitsDemoUITests;
 			productName = DBKitDemoUITests;
-			productReference = 86BC174C1EBC5140005936FC /* DBKitDemoUITests.xctest */;
+			productReference = 86BC174C1EBC5140005936FC /* DBKitsDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -417,7 +420,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 86BC17231EBC5140005936FC /* Build configuration list for PBXProject "DBKitDemo" */;
+			buildConfigurationList = 86BC17231EBC5140005936FC /* Build configuration list for PBXProject "DBKitsDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -430,9 +433,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				86BC17271EBC5140005936FC /* DBKitDemo */,
-				86BC17401EBC5140005936FC /* DBKitDemoTests */,
-				86BC174B1EBC5140005936FC /* DBKitDemoUITests */,
+				86BC17271EBC5140005936FC /* DBKitsDemo */,
+				86BC17401EBC5140005936FC /* DBKitsDemoTests */,
+				86BC174B1EBC5140005936FC /* DBKitsDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -478,7 +481,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBKitDemo/Pods-DBKitDemo-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBKitsDemo/Pods-DBKitsDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		369B4850A348F13AB1E049A9 /* [CP] Check Pods Manifest.lock */ = {
@@ -508,7 +511,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBKitDemo/Pods-DBKitDemo-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBKitsDemo/Pods-DBKitsDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -569,12 +572,12 @@
 /* Begin PBXTargetDependency section */
 		86BC17431EBC5140005936FC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 86BC17271EBC5140005936FC /* DBKitDemo */;
+			target = 86BC17271EBC5140005936FC /* DBKitsDemo */;
 			targetProxy = 86BC17421EBC5140005936FC /* PBXContainerItemProxy */;
 		};
 		86BC174E1EBC5140005936FC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 86BC17271EBC5140005936FC /* DBKitDemo */;
+			target = 86BC17271EBC5140005936FC /* DBKitsDemo */;
 			targetProxy = 86BC174D1EBC5140005936FC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -691,7 +694,7 @@
 		};
 		86BC17561EBC5140005936FC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 833F6CC631A49DFAB783113C /* Pods-DBKitDemo.debug.xcconfig */;
+			baseConfigurationReference = B987DD10F36BDDBC697E1274 /* Pods-DBKitsDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W58KGB664J;
@@ -705,7 +708,7 @@
 		};
 		86BC17571EBC5140005936FC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D710F9C43B2E9205A80DA01 /* Pods-DBKitDemo.release.xcconfig */;
+			baseConfigurationReference = C9425944F0B994053AF66556 /* Pods-DBKitsDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W58KGB664J;
@@ -726,7 +729,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.dabay.DBKitDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DBKitDemo.app/DBKitDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DBKitsDemo.app/DBKitsDemo";
 			};
 			name = Debug;
 		};
@@ -739,7 +742,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.dabay.DBKitDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DBKitDemo.app/DBKitDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DBKitsDemo.app/DBKitsDemo";
 			};
 			name = Release;
 		};
@@ -770,7 +773,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		86BC17231EBC5140005936FC /* Build configuration list for PBXProject "DBKitDemo" */ = {
+		86BC17231EBC5140005936FC /* Build configuration list for PBXProject "DBKitsDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				86BC17531EBC5140005936FC /* Debug */,
@@ -779,7 +782,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		86BC17551EBC5140005936FC /* Build configuration list for PBXNativeTarget "DBKitDemo" */ = {
+		86BC17551EBC5140005936FC /* Build configuration list for PBXNativeTarget "DBKitsDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				86BC17561EBC5140005936FC /* Debug */,
@@ -788,7 +791,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		86BC17581EBC5140005936FC /* Build configuration list for PBXNativeTarget "DBKitDemoTests" */ = {
+		86BC17581EBC5140005936FC /* Build configuration list for PBXNativeTarget "DBKitsDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				86BC17591EBC5140005936FC /* Debug */,
@@ -797,7 +800,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		86BC175B1EBC5140005936FC /* Build configuration list for PBXNativeTarget "DBKitDemoUITests" */ = {
+		86BC175B1EBC5140005936FC /* Build configuration list for PBXNativeTarget "DBKitsDemoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				86BC175C1EBC5140005936FC /* Debug */,

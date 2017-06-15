@@ -10,6 +10,10 @@
 
 @interface DBTextField : UITextField
 
-@property(nonatomic,strong) UIColor * db_placeholderColor;
+
+/**
+ 设置placeholder中文字和闪烁光标的颜色(默认为蓝色改为白色)
+ */
+@property(nonatomic,strong) UIColor * db_placeholderAndCursorColor;
 
 @end

@@ -12,7 +12,7 @@
 
 
 /**
- 设置navigationBar的背景颜色
+ 设置navigationBar的背景颜色(此方法在iOS8中会出现Crash)
  
  @param BackgroundColor navigationBar的背景颜色
  */

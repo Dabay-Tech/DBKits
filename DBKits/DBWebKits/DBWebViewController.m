@@ -8,7 +8,7 @@
 
 #import "DBWebViewController.h"
 #import <WebKit/WebKit.h>
-#import <MBProgressHUD+DBExtension.h>
+//#import <MBProgressHUD+DBExtension.h>
 
 @interface DBWebViewController ()<WKNavigationDelegate,WKUIDelegate,WKScriptMessageHandler>
 
@@ -97,7 +97,7 @@
 // 页面加载失败时调用--用来追踪加载过程
 - (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(WKNavigation *)navigation{
     NSLog(@"页面加载失败时调用--用来追踪加载过程--页面加载加载失败");
-    [MBProgressHUD db_showMessage:@"页面加载失败"];
+//    [MBProgressHUD db_showMessage:@"页面加载失败"];
 }
 
 

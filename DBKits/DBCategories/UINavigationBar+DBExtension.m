@@ -12,7 +12,7 @@
 
 
 /**
- 重写设置背景颜色的方法
+ 重写设置背景颜色的方法(此方法在iOS8中会出现Crash)
 
  @param backgroundColor UINavigationBar的背景颜色
  */

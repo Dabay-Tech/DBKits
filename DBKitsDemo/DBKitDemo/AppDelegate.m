@@ -12,6 +12,9 @@
 #import "DBLoadingImageView.h"
 #import "UINavigationController+DBExtension.h"
 #import "DBPlaceholderTextView.h"
+#import "DBTextField.h"
+#import "DBVerticalButton.h"
+
 
 @interface AppDelegate ()
 
@@ -34,10 +37,36 @@
     [nav db_setNavigationBarBackgroundColor:[UIColor redColor]];
     
     
-    CGRect frame=CGRectMake(100, 100, 200, 200);
+    CGRect frame=CGRectMake(120, 100, 200, 200);
     DBPlaceholderTextView *textView=[DBPlaceholderTextView db_textViewWithFrame:frame placeholderString:@"请输入您的建议~" db_placeholderStringColor:[UIColor redColor] db_limitedCharacter:15 db_limitedCharacter:[UIColor grayColor]];
     textView.text=@"测试-设置导航栏颜色的方法测试-设置导航栏颜色的方法测试-设置导航栏颜色的方法测试-设置导航栏颜色的方法测试-设置导航栏颜色的方法";
     [vc.view addSubview:textView];
+    
+    
+    //DBTextField控件的使用
+    DBTextField *textField=[[DBTextField alloc]initWithFrame:CGRectMake(0, 50, 100, 50)];
+    textField.db_placeholderAndCursorColor=[UIColor whiteColor];
+    textField.backgroundColor=[UIColor lightGrayColor];
+    textField.placeholder=@"cursor ";
+    [vc.view addSubview:textField];
+    
+    UITextField *textField1=[[UITextField alloc]initWithFrame:CGRectMake(0, 100, 100, 50)];
+    textField1.backgroundColor=[UIColor whiteColor];
+    textField1.placeholder=@"cursor";
+    [vc.view addSubview:textField1];
+    
+    
+    //DBVerticalButton控件的使用
+    DBVerticalButton *button=[[DBVerticalButton alloc]initWithFrame:CGRectMake(0, 200, 50, 80)];
+    [button db_setupHeaderViewImage:@"icon_payment" selectedImage:@"icon_payment" titleName:@"打电话"];
+    button.backgroundColor=[UIColor whiteColor];
+    [vc.view addSubview:button];
+    
+    //DBLoadingImageView控件的使用
+    DBLoadingImageView *loadView=[[DBLoadingImageView alloc]initWithFrame:CGRectMake(0, 300, 50, 50)];
+    loadView.backgroundColor=[UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:0.8];
+    [vc.view addSubview:loadView];
+    
     
     
     
