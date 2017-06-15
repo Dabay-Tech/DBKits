@@ -19,6 +19,7 @@
 /** 提示输入字数限制的label */
 @property(nonatomic,strong) UILabel * limitedTipsLabel;
 
+
 @end
 
 
@@ -32,35 +33,36 @@
 
 
 
-+(instancetype)db_textViewWithFrame:(CGRect)frame
+-(void)db_textViewWithFrame:(CGRect)frame
                   placeholderString:(NSString *)db_placeholderString
           db_placeholderStringColor:(UIColor *)db_placeholderStringColor
                 db_limitedCharacter:(NSInteger)db_limitedCharacter
                 db_limitedCharacter:(UIColor *)db_limitedCharacterColor{
 
-
-    DBPlaceholderTextView * db_textView = [[DBPlaceholderTextView alloc]initWithFrame:frame];
+    self.delegate=self;
     
     
     //初始化placeholderLabel
-    UILabel * placeholderLabel = [[UILabel alloc]initWithFrame:CGRectMake(5, 10, frame.size.width, 20)];
+    UILabel * placeholderLabel = [[UILabel alloc]initWithFrame:CGRectMake(5, 0, frame.size.width, 30)];
     placeholderLabel.backgroundColor = [UIColor clearColor];
     placeholderLabel.textColor = db_placeholderStringColor;
     placeholderLabel.text = db_placeholderString;
-    placeholderLabel.font = db_textView.font;
+    placeholderLabel.font = [UIFont systemFontOfSize:11];//db_textView.font;
     placeholderLabel.textAlignment=NSTextAlignmentLeft;
-    [db_textView addSubview:placeholderLabel];
+    [self addSubview:placeholderLabel];
     
     //初始化limitedTipsLabel
-    UILabel * limitedTipsLabel = [[UILabel alloc]initWithFrame:CGRectMake(frame.size.width - 50 , frame.size.height - 30 , 50, 30)];
-    limitedTipsLabel.backgroundColor=[UIColor clearColor];
+    UILabel * limitedTipsLabel = [[UILabel alloc]initWithFrame:CGRectMake(frame.size.width - 50 , frame.size.height-30 , 50, 30)];
+    limitedTipsLabel.backgroundColor=[UIColor blueColor];
     limitedTipsLabel.textColor = db_limitedCharacterColor;
     limitedTipsLabel.text = [NSString stringWithFormat:@"0/%li",(long)db_limitedCharacter];
-    limitedTipsLabel.font = db_textView.font;
+    limitedTipsLabel.font = self.font;
     limitedTipsLabel.textAlignment = NSTextAlignmentRight;
-    [db_textView addSubview:limitedTipsLabel];
+    [self addSubview:limitedTipsLabel];
     
-    return db_textView;
+    NSLog(@"limitedTipsLabel.frame=%f",limitedTipsLabel.frame.origin.y);
+    NSLog(@"db_textView.height=%f",self.frame.size.height);
+    
     
 }
 
@@ -86,8 +88,7 @@
 - (void)textViewDidBeginEditing:(UITextView *)textView{//开始编辑时对placeholder的操作
     _placeholderLabel.text = @"";
     _placeholderLabel.hidden=YES;
-
-
+    NSLog(@"开始编辑");
 }
 - (void)textViewDidEndEditing:(UITextView *)textView{//结束编辑时对placeholder的操作
     
@@ -104,11 +105,12 @@
 //    return YES;
 //
 //}
-//- (void)textViewDidChange:(UITextView *)textView{
-//
-//
-//
-//}
+- (void)textViewDidChange:(UITextView *)textView{
+
+    NSLog(@"内容发生改变");
+
+
+}
 //
 //- (void)textViewDidChangeSelection:(UITextView *)textView{
 //

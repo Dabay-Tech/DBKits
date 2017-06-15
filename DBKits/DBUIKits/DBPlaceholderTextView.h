@@ -24,7 +24,7 @@
 @property(nonatomic,strong) UIColor * db_limitedCharacterColor;
 
 
-+(instancetype)db_textViewWithFrame:(CGRect)frame
+-(void)db_textViewWithFrame:(CGRect)frame
                   placeholderString:(NSString *)db_placeholderString
           db_placeholderStringColor:(UIColor *)db_placeholderStringColor
                 db_limitedCharacter:(NSInteger)db_limitedCharacter

@@ -14,6 +14,7 @@
 #import "DBPlaceholderTextView.h"
 #import "DBTextField.h"
 #import "DBVerticalButton.h"
+#import "DBNavigationViewController.h"
 
 
 @interface AppDelegate ()
@@ -33,12 +34,14 @@
     //测试-设置导航栏颜色的方法
     UIViewController *vc=[[UIViewController alloc]init];
     vc.view.frame=[UIScreen mainScreen].bounds;
-    UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:vc];
-    [nav db_setNavigationBarBackgroundColor:[UIColor redColor]];
+    //UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:vc];
+    vc.title=@"Demo";
+    //[nav db_setNavigationBarBackgroundColor:[UIColor purpleColor]];
+    self.window.rootViewController=vc;
     
     
-    CGRect frame=CGRectMake(120, 100, 200, 200);
-    DBPlaceholderTextView *textView=[DBPlaceholderTextView db_textViewWithFrame:frame placeholderString:@"请输入您的建议~" db_placeholderStringColor:[UIColor redColor] db_limitedCharacter:15 db_limitedCharacter:[UIColor grayColor]];
+    CGRect frame=CGRectMake(120, 50, 200, 200);
+    DBPlaceholderTextView *textView=[[DBPlaceholderTextView alloc ]initWithFrame:frame] ;//placeholderString:@"请输入您的建议~" db_placeholderStringColor:[UIColor redColor] db_limitedCharacter:15 db_limitedCharacter:[UIColor grayColor]];
     textView.text=@"测试-设置导航栏颜色的方法测试-设置导航栏颜色的方法测试-设置导航栏颜色的方法测试-设置导航栏颜色的方法测试-设置导航栏颜色的方法";
     [vc.view addSubview:textView];
     
@@ -67,12 +70,14 @@
     loadView.backgroundColor=[UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:0.8];
     [vc.view addSubview:loadView];
     
+
     
     
     
     
     
-    self.window.rootViewController=nav;
+    
+    
     
     
     
